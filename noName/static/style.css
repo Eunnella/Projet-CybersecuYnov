@@ -1,0 +1,30 @@
+h1{
+    color: brown;
+}
+h2{
+    color: cornflowerblue;
+}
+h3{
+    color: cyan;
+}
+a{
+    color: darkred;
+}
+a:visited{
+    color: dimgray;
+}
+p{
+    font-style: oblique;
+}
+em{
+    font-weight: bold;
+}
+span.warning{
+    color: firebrick;
+}
+section.waldo:hover{
+    color: lightseagreen;
+}
+ul{
+    visibility: hidden;
+}
