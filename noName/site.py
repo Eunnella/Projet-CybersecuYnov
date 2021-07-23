@@ -11,7 +11,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 
 app = Flask(__name__)
-app.config['SECTRE_KEY'] = 'NewneW'
+app.secret_key = 'super NewneW'
 app.config['SQLALCHEMY_DATABASE_URI']= 'sqlite:///Database.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
