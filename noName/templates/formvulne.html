@@ -1,0 +1,20 @@
+{% extends 'basevulne.html' %}
+
+{% block head%}
+<h1>CTF compliqué (?)</h1>
+{% endblock %}
+
+{% block body%}
+
+<form action="?" method="POST" onsubmit="login();return false;">
+    Email: <input type="text" id="email" value=""/> <br>
+	Username: <input type="text" id="username" name= "username" value=""/><br>
+    Password: <input type="password" id="Password" name= "Password" value=""/><br>
+	<input class="button" type="submit" value="Login" />
+</form>
+
+<p>
+    <input type="button" name="Redirection" value="click here to register!" onclick="self.location.href='register'">
+</p>
+
+{% endblock %}
