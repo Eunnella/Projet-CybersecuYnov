@@ -26,9 +26,11 @@ def login():
         g.db = sqlite3.connect(DATABASE)
         cur = g.db.execute("SELECT * FROM users WHERE username = '%s' AND password_hash = '%s'" %(username, password))
         if cur.fetchone():
-            result = {'status': 'success'}
+            #result = {'status': 'success'}
+            return redirect ('/register')
         else:
             result = {'status': 'fail'}
+            # ce sera toujours ça parce que je n'utilise pas de hash dans cette version du site!
         g.db.close()
         return jsonify(result)
 
