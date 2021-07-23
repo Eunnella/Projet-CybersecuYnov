@@ -6,7 +6,7 @@
 
 {% block body%}
 
-<form action="/login" method="POST">
+<form action="/register" method="POST">
     <dl>
         <dt>Email:</dt>
         <dd><input type="text" name="email"></dd>
@@ -14,11 +14,11 @@
         <dd><input type="text" name="username"></dd>
         <dt>Password:</dt>
         <dd><input type="text" name="Password"></dd>
-        <dd><input type="submit" name="login"></dd>
+        <dd><input type="submit" name="sign up"></dd>
     </dl>
 </form>
 <p>
-    <input type="button" name="Redirection" value="click here to register!" onclick="self.location.href='register'">
+    You already have an account? <input type="button" name="Redirection" value="click here to login!" onclick="self.location.href='login'">
 </p>
 
 {% endblock %}

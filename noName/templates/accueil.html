@@ -1,13 +1,15 @@
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="author" content="Eunnella Rafanomezantsoa"/>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
-        <title>Page</title>
-        {% block head%}{% endblock %} 
-    </head>
-    <body>
-        {% block body%}{% endblock %}
-    </body>
-</html>
+{% extends 'base.html' %}
+
+{% block head%}
+<h1>Bienvenue sur CTF compliqué (?)</h1>
+{% endblock %}
+
+{% block body%}
+
+<p>
+    Amusons-nous bien :)<br>
+    <input type="button" name="Redirection" value="click here to login!" onclick="self.location.href='login'"> 
+    <input type="button" name="Redirection" value="click here to register!" onclick="self.location.href='register'">
+</p> 
+
+{% endblock %}

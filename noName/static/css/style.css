@@ -1,8 +1,10 @@
 body{
-    background-color: rgb(213, 245, 245);
+    background-color: rgb(226, 237, 238);
+    text-align: center;
 }
 h1{
-    color: brown;
+    color: rgb(255, 121, 121);
+    text-align: center;
 }
 h2{
     color: cornflowerblue;
